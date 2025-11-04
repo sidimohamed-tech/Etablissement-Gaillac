@@ -1,4 +1,4 @@
-import { Phone, Mail } from 'lucide-react';
+import { Phone, Mail } from "lucide-react";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -8,9 +8,14 @@ const Footer = () => {
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-12 mb-8">
           <div>
-            <img src="/logo.png" alt="Établissement Gaillac" className="h-16 mb-4 brightness-0 invert" />
+            <img
+              src="/logo.png"
+              alt="Établissement Gaillac"
+              className="h-16 mb-4"
+            />
             <p className="text-gray-400 leading-relaxed">
-              Service de plomberie d'urgence disponible 24h/24 et 7j/7 dans toute la France.
+              Service de plomberie d'urgence disponible 24h/24 et 7j/7 dans
+              toute la France.
             </p>
           </div>
 
@@ -38,7 +43,10 @@ const Footer = () => {
             <h3 className="text-xl font-bold mb-4 uppercase">Informations</h3>
             <p className="text-gray-400 mb-2">Plombier agréé</p>
             <p className="text-gray-400 mb-4">Service d'urgence national</p>
-            <a href="#" className="text-[#1E88E5] hover:text-[#E63946] transition underline">
+            <a
+              href="#"
+              className="text-[#1E88E5] hover:text-[#E63946] transition underline"
+            >
               Politique de confidentialité
             </a>
           </div>
