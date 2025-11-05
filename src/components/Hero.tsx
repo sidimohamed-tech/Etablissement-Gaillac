@@ -1,26 +1,26 @@
-import { Phone, MessageSquare, MessageCircle } from 'lucide-react';
+import { Phone, MessageSquare, MessageCircle } from "lucide-react";
 
 const Hero = () => {
   const handleCall = () => {
-    if (typeof window !== 'undefined' && window.gtag) {
-      window.gtag('event', 'conversion', {
-        'send_to': 'AW-1773466851/phone_call',
+    if (typeof window !== "undefined" && window.gtag) {
+      window.gtag("event", "conversion", {
+        send_to: "AW-1773466851/phone_call",
       });
     }
   };
 
   const handleWhatsApp = () => {
-    if (typeof window !== 'undefined' && window.gtag) {
-      window.gtag('event', 'conversion', {
-        'send_to': 'AW-1773466851/whatsapp_click',
+    if (typeof window !== "undefined" && window.gtag) {
+      window.gtag("event", "conversion", {
+        send_to: "AW-1773466851/whatsapp_click",
       });
     }
   };
 
   const scrollToForm = () => {
-    const formElement = document.getElementById('contact-form');
+    const formElement = document.getElementById("contact-form");
     if (formElement) {
-      formElement.scrollIntoView({ behavior: 'smooth' });
+      formElement.scrollIntoView({ behavior: "smooth" });
     }
   };
 
@@ -41,7 +41,7 @@ const Hero = () => {
           </h1>
 
           <p className="text-xl md:text-2xl text-white/95 mb-8 md:mb-12 font-medium">
-            Intervention rapide 24h/24 et 7j/7, dans toute la France
+            Intervention rapide 24h/24 et 7j/7 – Agréé assurance
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
@@ -79,12 +79,20 @@ const Hero = () => {
             </div>
             <div className="bg-white/10 backdrop-blur-sm rounded-lg p-6 text-white">
               <div className="text-3xl font-bold mb-2">30 min</div>
-              <div className="text-sm">Intervention rapide selon zone</div>
+              <div className="text-sm">Intervention rapide</div>
             </div>
             <div className="bg-white/10 backdrop-blur-sm rounded-lg p-6 text-white">
-              <div className="text-3xl font-bold mb-2">15 ans</div>
+              <div className="text-3xl font-bold mb-2">35 ans</div>
               <div className="text-sm">D'expérience et d'expertise</div>
             </div>
+          </div>
+
+          <div className="mt-8">
+            <img
+              src="/plombier.png"
+              alt="Plombier en action"
+              className="w-full rounded-lg shadow-lg"
+            />
           </div>
         </div>
       </div>

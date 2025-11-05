@@ -1,10 +1,10 @@
-import { Phone } from 'lucide-react';
+import { Phone } from "lucide-react";
 
 const FinalCTA = () => {
   const handleCall = () => {
-    if (typeof window !== 'undefined' && window.gtag) {
-      window.gtag('event', 'conversion', {
-        'send_to': 'AW-1773466851/phone_call',
+    if (typeof window !== "undefined" && window.gtag) {
+      window.gtag("event", "conversion", {
+        send_to: "AW-1773466851/phone_call",
       });
     }
   };
@@ -17,7 +17,8 @@ const FinalCTA = () => {
             Urgence plomberie 24h/24
           </h2>
           <p className="text-xl md:text-2xl text-white/95 mb-8">
-            Une équipe de professionnels à votre écoute partout en France
+            Une équipe de professionnels à votre écoute, un artisan de proximité
+            à votre service
           </p>
           <a
             href="tel:0671411480"

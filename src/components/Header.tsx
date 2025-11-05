@@ -1,18 +1,18 @@
-import { Phone, MessageCircle } from 'lucide-react';
+import { Phone, MessageCircle } from "lucide-react";
 
 const Header = () => {
   const handleCall = () => {
-    if (typeof window !== 'undefined' && window.gtag) {
-      window.gtag('event', 'conversion', {
-        'send_to': 'AW-1773466851/phone_call',
+    if (typeof window !== "undefined" && window.gtag) {
+      window.gtag("event", "conversion", {
+        send_to: "AW-1773466851/phone_call",
       });
     }
   };
 
   const handleWhatsApp = () => {
-    if (typeof window !== 'undefined' && window.gtag) {
-      window.gtag('event', 'conversion', {
-        'send_to': 'AW-1773466851/whatsapp_click',
+    if (typeof window !== "undefined" && window.gtag) {
+      window.gtag("event", "conversion", {
+        send_to: "AW-1773466851/whatsapp_click",
       });
     }
   };
@@ -21,10 +21,15 @@ const Header = () => {
     <header className="fixed top-0 left-0 right-0 bg-white shadow-md z-50">
       <div className="container mx-auto px-4 py-3 flex items-center justify-between">
         <div className="flex items-center gap-4">
-          <img src="/logo.png" alt="Établissement Gaillac" className="h-12 md:h-16" />
+          <img
+            src="/logo.png"
+            alt="Établissement Gaillac"
+            className="h-12 md:h-16"
+          />
           <div className="hidden md:block">
             <p className="text-sm md:text-base text-gray-700 font-medium">
-              Urgence Plomberie 24h/24 – Intervention rapide dans toute la France
+              Urgence Plomberie 24h/24 – Intervention rapide avec plus de 35 ans
+              d’expérience
             </p>
           </div>
         </div>
@@ -39,7 +44,7 @@ const Header = () => {
             06 71 41 14 80
           </a>
           <a
-            href="https://wa.me/33671411480?text=Bonjour%2C%20j%27aimerais%20un%20devis%20pour%20une%20urgence%20plomberie"
+            href="https://wa.me/33671411480?text=Bonjour%2C%20j%E2%80%99ai%20besoin%20d%E2%80%99une%20intervention%20de%20plomberie%C2%A0en%C2%A0urgence."
             onClick={handleWhatsApp}
             target="_blank"
             rel="noopener noreferrer"

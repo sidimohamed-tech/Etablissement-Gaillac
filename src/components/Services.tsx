@@ -1,33 +1,34 @@
-import { Wrench, Droplets, Flame, Clock } from 'lucide-react';
+import { Wrench, Droplets, Flame, Clock } from "lucide-react";
+import AttentionRectangle from "./AttentionRectangle";
 
 const Services = () => {
   const services = [
     {
       icon: Wrench,
-      title: 'Débouchage canalisation',
-      description: 'Débouchage rapide et efficace de toutes vos canalisations',
+      title: "Débouchage canalisation",
+      description: "Débouchage rapide et efficace de toutes vos canalisations",
     },
     {
       icon: Droplets,
-      title: 'Réparation fuite d\'eau',
-      description: 'Recherche et réparation de fuites d\'eau',
+      title: "Réparation fuite d'eau",
+      description: "Recherche et réparation de fuites d'eau",
     },
     {
       icon: Flame,
-      title: 'Remplacement chauffe-eau',
-      description: 'Dépannage et installation de chauffe-eau',
+      title: "Remplacement chauffe-eau",
+      description: "Dépannage et installation de chauffe-eau",
     },
     {
       icon: Clock,
-      title: 'Urgence plomberie',
-      description: 'Intervention express 24/7 pour toute urgence',
+      title: "Urgence plomberie",
+      description: "Intervention express 24/7 pour toute urgence",
     },
   ];
 
   const handleCall = () => {
-    if (typeof window !== 'undefined' && window.gtag) {
-      window.gtag('event', 'conversion', {
-        'send_to': 'AW-1773466851/phone_call',
+    if (typeof window !== "undefined" && window.gtag) {
+      window.gtag("event", "conversion", {
+        send_to: "AW-1773466851/phone_call",
       });
     }
   };
@@ -63,7 +64,7 @@ const Services = () => {
             );
           })}
         </div>
-
+        <AttentionRectangle />
         <div className="text-center">
           <a
             href="tel:0671411480"

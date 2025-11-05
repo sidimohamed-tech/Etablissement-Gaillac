@@ -14,8 +14,8 @@ const Footer = () => {
               className="h-16 mb-4"
             />
             <p className="text-gray-400 leading-relaxed">
-              Service de plomberie d'urgence disponible 24h/24 et 7j/7 dans
-              toute la France.
+              Service de plomberie d'urgence disponible 24h/24 et 7j/7 à
+              proximité.
             </p>
           </div>
 

@@ -1,26 +1,26 @@
-import { Wrench, Clock, CreditCard, Phone } from 'lucide-react';
+import { Wrench, Clock, CreditCard, Phone } from "lucide-react";
 
 const WhyChooseUs = () => {
   const benefits = [
     {
       icon: Wrench,
-      title: '15 ans d\'expérience',
-      description: 'Une expertise reconnue dans le domaine de la plomberie',
+      title: "35 ans d'expérience",
+      description: "Une expertise reconnue dans le domaine de la plomberie",
     },
     {
       icon: Clock,
-      title: 'Intervention sous 30 minutes',
-      description: 'Rapidité garantie selon votre zone géographique',
+      title: "Intervention sous 30 minutes",
+      description: "Rapidité garantie pour toutes vos urgences plomberie",
     },
     {
       icon: CreditCard,
-      title: 'Devis gratuit et sans engagement',
-      description: 'Transparence totale sur nos tarifs',
+      title: "Devis gratuit et sans engagement",
+      description: "Transparence totale sur nos tarifs",
     },
     {
       icon: Phone,
-      title: 'Assistance disponible 24/7',
-      description: 'Joignable à tout moment pour vos urgences',
+      title: "Assistance disponible 24/7",
+      description: "Joignable à tout moment pour vos urgences",
     },
   ];
 
