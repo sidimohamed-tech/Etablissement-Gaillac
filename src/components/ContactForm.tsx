@@ -21,7 +21,7 @@ const ContactForm = () => {
 
     if (typeof window !== "undefined" && window.gtag) {
       window.gtag("event", "conversion", {
-        send_to: "AW-1773466851/form_submit",
+        send_to: "AW-1773466851/9bb8CK6kt7obEIPmjPpB",
       });
     }
 
